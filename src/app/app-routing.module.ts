@@ -18,6 +18,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'inicio',
     pathMatch: 'full'
+  },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
   }
 ];
 
