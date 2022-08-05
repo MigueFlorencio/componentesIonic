@@ -82,6 +82,10 @@ const routes: Routes = [
   {
     path: 'refresh',
     loadChildren: () => import('./pages/refresh/refresh.module').then( m => m.RefreshPageModule)
+  },
+  {
+    path: 'search',
+    loadChildren: () => import('./pages/search/search.module').then( m => m.SearchPageModule)
   }
 ];
 
