@@ -78,6 +78,10 @@ const routes: Routes = [
   {
     path: 'progress',
     loadChildren: () => import('./pages/progress/progress.module').then( m => m.ProgressPageModule)
+  },
+  {
+    path: 'refresh',
+    loadChildren: () => import('./pages/refresh/refresh.module').then( m => m.RefreshPageModule)
   }
 ];
 
